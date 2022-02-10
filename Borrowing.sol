@@ -129,8 +129,5 @@ contract Borrowing is Base {
         
         // send collateral back to the user
         activePool.sendETH(msg.sender, collateral);
-        
     }
-    
-    
 }

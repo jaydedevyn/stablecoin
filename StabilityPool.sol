@@ -14,15 +14,14 @@ contract StabilityPool is Ownable {
     uint256 public totalETHDeposited;
     
     mapping(address => uint256) public deposits;
-    
-    // deposit -> StabilityPool Providers should be able to deposit LUSD
-    
+
     function setAddresses(address _lusdTokenAddress, address _vaultManagerAddress, address _activePoolAddress) external onlyOwner {
         lusdToken = LUSDToken(_lusdTokenAddress);
         vaultManagerAddress = _vaultManagerAddress;
         activePoolAddress = _activePoolAddress;
     }
-    
+
+    // deposit -> StabilityPool Providers should be able to deposit LUSD
     function deposit(uint256 _amount) external {
         deposits[msg.sender] += _amount;
         totalLUSDDeposits += _amount;

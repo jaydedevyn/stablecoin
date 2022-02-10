@@ -7,7 +7,6 @@ import "./Borrowing.sol";
 
 contract SortedVaults {
     address public borrowingAddress;
-
     VaultManager public vaultManager;
 
     // Information for a node in the list

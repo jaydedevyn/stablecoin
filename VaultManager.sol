@@ -13,7 +13,6 @@ import "./GasPool.sol";
 
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol";
 
-
 // responsibilities: redeem and liquidate
 contract VaultManager is Base, Ownable {
     SortedVaults public sortedVaults;

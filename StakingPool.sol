@@ -14,7 +14,6 @@ contract StakingPool is Ownable {
     constructor(address _vaultManager) {
         borrowing = msg.sender;
         vaultManager = _vaultManager;
-        
         totalLUSDFees = 0;
         totalETHFees = 0;
     }
