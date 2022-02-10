@@ -10,7 +10,6 @@ import "./StabilityPool.sol";
 import "./ActivePool.sol";
 import "./LUSDToken.sol";
 import "./GasPool.sol";
-
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol";
 
 // responsibilities: redeem and liquidate
